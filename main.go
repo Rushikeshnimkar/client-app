@@ -92,7 +92,7 @@ func main() {
 		}
 
 		// Find common SSIDs between nearby networks and API data
-		color.Green("Ready to connect WiFi:")
+		color.Green("Erebrus Registered DWiFi Networks in Your Vicinity:")
 		var readyNetworks []string
 		for i, ssid := range nearbyNetworks {
 			ssidLower := strings.ToLower(ssid)
@@ -104,7 +104,7 @@ func main() {
 		}
 
 		if len(readyNetworks) == 0 {
-			color.Yellow("No common networks found between nearby networks and API data.")
+			color.Yellow("No Erebrus DWiFi networks detected in your current location.")
 			continue
 		}
 
